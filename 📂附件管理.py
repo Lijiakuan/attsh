@@ -360,7 +360,7 @@ if mode == "查看记录":
     if st.button("导出全部记录",on_click=export_records(records)):
         datestr = datetime.datetime.now()
         date_str = datestr.strftime('%Y_%m_%d')
-        expfilpth = f"downloads\记录{date_str}.xlsx"
+        expfilpth = f"downloads/记录{date_str}.xlsx"
         exfilname = f"记录{date_str}.xlsx"
         exp_btn = st.download_button(
                         label="下载记录",
